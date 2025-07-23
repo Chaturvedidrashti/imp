@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CareerCloud – Digital Services Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+
+  <!-- Navbar -->
+  <nav class="navbar">
+<div class="logo">
+  <img src="your-image-path/logo.png" alt="CareerCloud Logo" style="height: 40px; vertical-align: middle;">
+  CareerCloud
+</div>
+     <div class="menu-toggle" id="menu-toggle">☰</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+   
+
+   
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Your One-Stop Digital Services Platform</h1> 
+      <p>Websites, Graphics, Videos & Software that elevate your brand.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>Our Services</h2><br>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="web-design.jpg" alt="Website Design">
+        <h3>Website Design</h3>
+        <p>Responsive, modern, and fast websites tailored to your needs.</p>
+      </div>
+      <div class="service-card">
+        <img src="graphic-design.jpg" alt="Graphic Design">
+        <h3>Graphic Design</h3>
+        <p>Branding, logos, social media, and promotional graphics.</p>
+      </div>
+      <div class="service-card">
+        <img src="video-editing.jpg" alt="Video Editing">
+        <h3>Video Editing</h3>
+        <p>Professional video editing, reels, and animations.</p>
+      </div>
+      <div class="service-card">
+        <img src="web-dev.jpg" alt="Web Development">
+        <h3>Web Development</h3>
+        <p>Full-stack development using modern technologies.</p>
+      </div>
+      <div class="service-card">
+        <img src="software-dev.jpg" alt="Software Development">
+        <h3>Software Development</h3>
+        <p>Custom desktop and mobile app development.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+About CareerCloud Section
+<section id="about" class="section about">
+  <div class="about-container">
+    <div class="about-image">
+      <!-- <img src="images/team.jpg" alt="CareerCloud Team"> -->
+    </div>
+
+    <div class="about-text">
+      <h2>About CareerCloud</h2><br>
+      <p><strong>CareerCloud</strong> is your trusted partner in the digital world — delivering high-quality web development, graphic design, branding, editing, and software solutions. Whether you're a startup, freelancer, or enterprise, we turn your ideas into real digital experiences.</p>
+
+      <h3>🎯 Our Mission</h3>
+      <p>To empower businesses and individuals by delivering affordable, innovative, and result-driven digital services globally.</p>
+
+      <h3>🌟 Our Vision</h3>
+      <p>To become a leading all-in-one platform where creativity meets technology — simplifying the journey from idea to impact.</p>
+
+      <h3>💡 Why Choose CareerCloud?</h3>
+      <ul>
+        <li>✔ Expert team of designers, developers & editors</li>
+        <li>✔ One-stop solution for all digital needs</li>
+        <li>✔ 24/7 Support & timely delivery</li>
+        <li>✔ Transparent pricing & client-focused approach</li>
+      </ul>
+
+      <h3>🏆 Our Achievements</h3>
+      <ul>
+        <li>💼 15 Projects Completed</li>
+        <li>🏅 Rated 4.1/5 by real clients</li>
+        <li>📈 3X client business growth average</li>
+      </ul>
+
+     </div>
+  </div>
+</section>
+
+
+  <!-- //
+  <section id="about" class="section about">
+    <div class="about-content">
+      <img src="team.jpg" alt="Our Team">
+      <div>
+        <h2>About CareerCloud</h2>
+        <p>We are a team of creative and technical experts helping businesses grow digitally.</p>
+        <ul>
+
+          <li>✔ 100+ Projects Delivered</li>
+          <li>✔ 5+ Years of Experience</li>
+          <li>✔ Creative & Reliable Team</li>
+          
+        </ul>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" class="section contact">
+  <h2>Contact Us</h2>
+  <form id="whatsapp-form">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <!-- WhatsApp Connect Button -->
+  <div class="whatsapp-connect">
+
+    <p>Or connect instantly:</p>
+    <a href="https://wa.me/917649895144?text=Hi%20CareerCloud%2C%20I%20am%20interested%20in%20your%20services" target="_blank" class="whatsapp-button">
+      💬 Message Us on WhatsApp
+    </a>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  
+  <footer>
+    <p>© 2025 CareerCloud. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/company/careercloud26/">LinkedIn</a> | <a href="https://www.instagram.com/career_cloud">Instagram</a>
+     
+    </div>
+  </footer>
+
+  <!-- JS for Navbar Toggle -->
+
+  <script>
+    const toggleBtn = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    toggleBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+//
+<script>
+  document.getElementById('whatsapp-form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent actual form submission
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    const whatsappMessage = `Hi CareerCloud,%0AName: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+    const phoneNumber = "917649895144"; // Replace with your WhatsApp number
+
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+    window.open(whatsappURL, '_blank');
+  });
+</script>
+
+</body>
+</html>
